@@ -1,0 +1,29 @@
+* {
+    color: rgb(112, 111, 111);
+    font-size: 16px;
+}
+
+body {
+    background: url('C:/Users/RISHABH/Desktop/practice/bootstarp4/Smart/images/elegant2.jpg');
+}
+
+.navbar-brand {
+    color: rgba(54, 49, 49, 0.89);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+div {
+    margin-bottom: 2%;
+}
+
+.msg-error {
+    color: #c65848;
+}
+
+.g-recaptcha.error {
+    border: solid 2px #c64848;
+    padding: .2em;
+    width: 19em;
+}

@@ -1,0 +1,38 @@
+* {
+    color: rgb(112, 111, 111);
+    font-size: 18px;
+}
+
+body {
+    background: url('C:/Users/RISHABH/Desktop/practice/bootstarp4/Smart/images/elegant2.jpg');
+}
+
+.forgot-link {
+    text-decoration: underline;
+}
+
+#myList {
+    font-weight: bold;
+}
+
+.navbar-brand {
+    color: rgb(54, 49, 49);
+    font-weight: bold;
+}
+
+div {
+    margin-bottom: 3%;
+}
+
+.login-content div {
+    margin-bottom: 10%;
+}
+
+.center-click {
+    align-content: center;
+    text-align: center;
+}
+
+.main {
+    margin-left: 40%;
+}
