@@ -1,0 +1,15 @@
+{
+    "name": "hcx",
+    "version": "1.0.0",
+    "description": "HCX ",
+    "main": "index.js",
+    "scripts": {
+        "deploy": "gh-pages -d Smart"
+    },
+    "homepage": "https://RISHABH-1936.github.io/HCX-Website",
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "gh-pages": "^2.0.1"
+    }
+}

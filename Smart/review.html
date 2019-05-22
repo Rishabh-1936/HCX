@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="css/review.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <title>Review</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light fixed-top pt-3 pl-4">
+        <a href="" class="navbar-brand" style="font-size: 1.5rem;color: rgba(61, 60, 60, 0.938);
+        ">Logo</a>
+    </nav>
+
+    <section class="container">
+        <div class="mt-5"></div>
+    </section>
+
+    <section class="container mx-0 pl-4">
+        <div class="row align-items-center">
+            <div class="col-2 ">
+                <div>
+                    <h2>Hi,</h2>
+                    <h2>John Deo</h2>
+                    <p>You are just one more step away from completion.</p>
+                </div>
+            </div>
+            <div class="col-10" style="padding-left:15%;">
+                <p style="margin-left:-2%;">Press DONE button when you are done filling the form to send for review. Thanks!</p>
+                <form class="mt-5">
+                    <div class="form-group row my-0">
+                        <label for="DOB" class="col-sm-4 justify-content-start px-0">DATE OF BIRTH</label>
+                        <div class="col-sm-4 px-0">
+                            <input type="date" class="form-control" id="DOB" placeholder="">
+                        </div>
+                        <div class="col-sm-4"></div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="my-1 col-sm-4 px-0 justify-content-start" for="citizenship">PRIMARY CITIZENSHIP</label>
+                        <select class="custom-select my-1 col-sm-4" id="citizenship">
+                                <option value="India">India</option>
+                                <option value="UnitedState">United State</option>
+                                <option value="UnitedKingdom">United Kingdom</option>
+                                <option value="Australia">Australia</option>
+                                <option selected></option>
+                            </select>
+                    </div>
+                    <div class="form-inline row justify-content-start">
+                        <label class="my-1 col-sm-4 px-0 justify-content-start" for="country">COUNTRY OF RESIDENCE</label>
+                        <select class="custom-select my-1 col-sm-4" id="country">
+                                <option value="India">India</option>
+                                <option value="UnitedState">United State</option>
+                                <option value="UnitedKingdom">United Kingdom</option>
+                                <option value="Australia">Australia</option>
+                                <option selected></option>
+                            </select>
+                    </div>
+                    <div class="form-inline row">
+                        <label class="my-1 col-sm-4 px-0 justify-content-start" for="tax">TAX RESIDENCE</label>
+                        <select class="custom-select my-1 col-sm-4" id="tax">
+                                <option value="India">India</option>
+                                <option value="UnitedState">United State</option>
+                                <option value="UnitedKingdom">United Kingdom</option>
+                                <option value="Australia">Australia</option>
+                                <option selected></option>
+                            </select>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 justify-content-start px-0">
+                            <p class="">MAILING ADDRESS</p>
+                        </div>
+                        <div class="col-sm-4 px-0 justify-content-start">
+                            <label class="custom-file-label" for="File"></label>
+                            <input type="file" class="custom-file-input" id="File" required>
+                            <small>Attach PDF/JPEG of your “Proof of Residence”</small>
+                        </div>
+
+                    </div>
+                    <div class="form-group row px-0">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4 px-0" style="text-align:end;">
+                            <button type="submit" class="btn btn-outline-secondary rounded-pill px-5 ">Done</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- <span class="msg-error error"></span>
+    <div id="recaptcha" class="g-recaptcha" data-sitekey="6Ld4Jh8TAAAAAD2tURa21kTFwMkKoyJCqaXb0uoK"></div>
+
+    <button class="btn" id="btn-validate">Validate reCAPTCHA</button>
+
+    <script>
+        $('#btn-validate').click(function() {
+            var $captcha = $('#recaptcha'),
+                response = grecaptcha.getResponse();
+
+            if (response.length === 0) {
+                $('.msg-error').text("reCAPTCHA is mandatory");
+                if (!$captcha.hasClass("error")) {
+                    $captcha.addClass("error");
+                }
+            } else {
+                $('.msg-error').text('');
+                $captcha.removeClass("error");
+                alert('reCAPTCHA marked');
+            }
+        })
+    </script> -->
+
+</body>
+
+</html>
